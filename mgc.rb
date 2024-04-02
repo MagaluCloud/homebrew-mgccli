@@ -5,20 +5,20 @@
 class Mgc < Formula
   desc ""
   homepage "https://magalu.cloud"
-  version "0.18.3"
+  version "0.18.4-rc1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.3/mgc_0.18.3_darwin_amd64.tar.gz"
-      sha256 "b91d43941613bce7c7edcec0992060e902b20af2b24ad3367c7bc2760259f9ee"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.4-rc1/mgc_0.18.4-rc1_darwin_amd64.tar.gz"
+      sha256 "d306e22d7d219de91001d8ac2a4854db306a5ef0381daf8bc5645b99a4bdc73a"
 
       def install
         bin.install "mgc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.3/mgc_0.18.3_darwin_arm64.tar.gz"
-      sha256 "bb0dc09ef9d5dfaff6552a083641f4c463628d6ff99605d3be674c7cd43692ec"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.4-rc1/mgc_0.18.4-rc1_darwin_arm64.tar.gz"
+      sha256 "97f0725b4e6b728ba7bc1a898946ab664e139569742c645e26f6555ad6015b1d"
 
       def install
         bin.install "mgc"
@@ -27,17 +27,17 @@ class Mgc < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.3/mgc_0.18.3_linux_arm64.tar.gz"
-      sha256 "5bbf756573a78fb192819d69333c50fe911f64a25b6ee121051902b39290f6b4"
+    if Hardware::CPU.intel?
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.4-rc1/mgc_0.18.4-rc1_linux_amd64.tar.gz"
+      sha256 "dd628f010de92c930a5a45711db082710ea875e73acfebce8863daedc0d2a9d6"
 
       def install
         bin.install "mgc"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.3/mgc_0.18.3_linux_amd64.tar.gz"
-      sha256 "5bebe1f88e33c10dac0086732b2f7e242cf0b1671da6ff115f568a5783433285"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.4-rc1/mgc_0.18.4-rc1_linux_arm64.tar.gz"
+      sha256 "41f242b9c3b3241757e150d63241aa61fb57b4d5554bcea52d3b8a27369dd4bd"
 
       def install
         bin.install "mgc"
