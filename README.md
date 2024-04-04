@@ -25,13 +25,13 @@ Para instalar a CLI utilizar a ferramenta brew, você precisa ter certeza de que
 Depois abra um terminal e execute o comando tap no nosso repositório oficial:
 
 ```
-brew tap MagaluCloud/homebrew-mgc
+brew tap MagaluCloud/homebrew-mgccli
 ```
 
 e por final execute o comando de instalação:
 
 ```
-brew install mgc
+brew install mgccli
 ```
 
 
