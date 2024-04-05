@@ -5,7 +5,7 @@
 class Mgccli < Formula
   desc ""
   homepage "https://magalu.cloud"
-  version "0.18.4-rc6"
+  version "0.18.4"
 
   on_macos do
     if Hardware::CPU.intel?
