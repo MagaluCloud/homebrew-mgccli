@@ -9,16 +9,16 @@ class Mgccli < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.4-rc6/mgccli_0.18.4-rc6_darwin_amd64.tar.gz"
-      sha256 "d267b477828728dc950fdaa13da186d096d0548ddf260b3b7f333c67f3cebce9"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.4/mgccli_0.18.4_darwin_amd64.tar.gz"
+      sha256 "5e7026b52847002500a70238cd2d0833030fb2e23ec69ae8f24a04f3f6a185bd"
 
       def install
         bin.install "mgc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.4-rc6/mgccli_0.18.4-rc6_darwin_arm64.tar.gz"
-      sha256 "e2c1d31fa1b400cff7e095533898fe2904fccd20d67b4e22c5f426807f0c38cf"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.4/mgccli_0.18.4_darwin_arm64.tar.gz"
+      sha256 "821acf68981488d6c7ead190e4833abe506d5aba4fc3de1c3919f9bdaed04e5f"
 
       def install
         bin.install "mgc"
@@ -28,16 +28,16 @@ class Mgccli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.4-rc6/mgccli_0.18.4-rc6_linux_amd64.tar.gz"
-      sha256 "2fbadff05aeb0d016aac2ca476de4b5db80b9a7d93a7c6ab9be515a3056be778"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.4/mgccli_0.18.4_linux_amd64.tar.gz"
+      sha256 "e98a742952b4c9836d890252044e784ab7e8585b8f127753cdf47f27635e4a7f"
 
       def install
         bin.install "mgc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.4-rc6/mgccli_0.18.4-rc6_linux_arm64.tar.gz"
-      sha256 "4737926d8dccc6520afbea6575d0dd7a8c108c297961eb223935a1aceb0fbfec"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.4/mgccli_0.18.4_linux_arm64.tar.gz"
+      sha256 "f026bb49c712a08242b895674c83e92df0c7fe4c00469bb358b5ecba3d88ec06"
 
       def install
         bin.install "mgc"
