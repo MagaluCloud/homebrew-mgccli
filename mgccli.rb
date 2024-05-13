@@ -5,20 +5,20 @@
 class Mgccli < Formula
   desc ""
   homepage "https://magalu.cloud"
-  version "0.18.10-rc4"
+  version "0.18.10"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.10-rc4/mgccli_0.18.10-rc4_darwin_amd64.tar.gz"
-      sha256 "f1cdb519672b9e0290a5361af86a3a9a7a23d2acc56352766ecc3a710d22f82f"
+    on_intel do
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.10/mgccli_0.18.10_darwin_amd64.tar.gz"
+      sha256 "6ecdbd339700f802436249373b4e578c6206dc984cbd99d2f0697ee8cb55fe84"
 
       def install
         bin.install "mgc"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.10-rc4/mgccli_0.18.10-rc4_darwin_arm64.tar.gz"
-      sha256 "04bd01ac15beb719060b3d35c70672313a44bfe4a7c7727cddaaf4147555658f"
+    on_arm do
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.10/mgccli_0.18.10_darwin_arm64.tar.gz"
+      sha256 "617c16639156b6fc50f88bb0d0708d7d5497c8b0fa88f20aabd14051df8a849f"
 
       def install
         bin.install "mgc"
@@ -27,20 +27,24 @@ class Mgccli < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.10-rc4/mgccli_0.18.10-rc4_linux_amd64.tar.gz"
-      sha256 "180b099386f7755be5b92ea1dd098e6ccf68e9b416ac64acd5211b7e3e565f73"
+    on_intel do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.10/mgccli_0.18.10_linux_amd64.tar.gz"
+        sha256 "9fe48f918feabf0b6373b675629f2c8ed15588f74ecf9a9c04f6590c88aee83b"
 
-      def install
-        bin.install "mgc"
+        def install
+          bin.install "mgc"
+        end
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.10-rc4/mgccli_0.18.10-rc4_linux_arm64.tar.gz"
-      sha256 "33dadca80d124bdcd138de027652b01b1a9be4055cbb50275f1ea241b6d0cdec"
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/MagaluCloud/mgccli/releases/download/v0.18.10/mgccli_0.18.10_linux_arm64.tar.gz"
+        sha256 "10d92edfbd9128ed58a7b30d7da0cb94fb6a23a9a56cff775a64d2cdc28f0872"
 
-      def install
-        bin.install "mgc"
+        def install
+          bin.install "mgc"
+        end
       end
     end
   end
