@@ -5,20 +5,20 @@
 class Mgccli < Formula
   desc ""
   homepage "https://magalu.cloud"
-  version "0.21.1"
+  version "0.23.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.21.1/mgccli_0.21.1_darwin_amd64.tar.gz"
-      sha256 "c48c22ce80fe617c661411aaead0197de3186adbe6848bd407bce41740082a5d"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.23.0/mgccli_0.23.0_darwin_amd64.tar.gz"
+      sha256 "caf3b00ce727c216cd0c55d4a2f27665df7063301c9b4831a0e93da30d748f9e"
 
       def install
         bin.install "mgc"
       end
     end
     on_arm do
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.21.1/mgccli_0.21.1_darwin_arm64.tar.gz"
-      sha256 "911ba1b062ab5477eaafaf8ed78809bf6f09894a8d9c4d0d387468db1367507a"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.23.0/mgccli_0.23.0_darwin_arm64.tar.gz"
+      sha256 "8cb308def36f2e8d6023e32f7b8f5f23627e974031ea7a5492647dc5c7506628"
 
       def install
         bin.install "mgc"
@@ -29,8 +29,8 @@ class Mgccli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MagaluCloud/mgccli/releases/download/v0.21.1/mgccli_0.21.1_linux_amd64.tar.gz"
-        sha256 "ce6b42a754be798bb6486922494cead97c1150199cf1fd735a6aea89974a3d0f"
+        url "https://github.com/MagaluCloud/mgccli/releases/download/v0.23.0/mgccli_0.23.0_linux_amd64.tar.gz"
+        sha256 "c0f14706333222a9a73af587aba33b9c0f815ff53a881b216a681da82b4b41d2"
 
         def install
           bin.install "mgc"
@@ -39,8 +39,8 @@ class Mgccli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MagaluCloud/mgccli/releases/download/v0.21.1/mgccli_0.21.1_linux_arm64.tar.gz"
-        sha256 "373ed0f2c57f2e8e295afd97fcdbd9606106f679cf971aab728ebb7d59b258a1"
+        url "https://github.com/MagaluCloud/mgccli/releases/download/v0.23.0/mgccli_0.23.0_linux_arm64.tar.gz"
+        sha256 "d67f6a88693b065784addb80f3f8ef06f005a82fc30607d8e539d75180e615e2"
 
         def install
           bin.install "mgc"
