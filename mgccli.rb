@@ -5,21 +5,21 @@
 class Mgccli < Formula
   desc ""
   homepage "https://magalu.cloud"
-  version "0.34.1"
+  version "0.35.0"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.34.1/mgccli_0.34.1_darwin_amd64.tar.gz"
-      sha256 "bbae749227d36ddc17b561c27161dd8f766b9e5290d0fb47c81ee33c874df7b0"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.35.0/mgccli_0.35.0_darwin_amd64.tar.gz"
+      sha256 "eb30296668b0addc3fb0c5aa23d69e1d1bac69e503272c149aa2b3c65a6cd37f"
 
       def install
         bin.install "mgc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.34.1/mgccli_0.34.1_darwin_arm64.tar.gz"
-      sha256 "27d99e43d658d24459294996629b6ceb118a56b9b0f316ff9ad620984453a060"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.35.0/mgccli_0.35.0_darwin_arm64.tar.gz"
+      sha256 "707080b49f4352b0eebf9a48ff7b75860ce0aef248216366d1f7b31087bdf14a"
 
       def install
         bin.install "mgc"
@@ -30,8 +30,8 @@ class Mgccli < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MagaluCloud/mgccli/releases/download/v0.34.1/mgccli_0.34.1_linux_amd64.tar.gz"
-        sha256 "1dda296661455b945f1d5a0212916890523ee5748a9389058f738228bc9730ac"
+        url "https://github.com/MagaluCloud/mgccli/releases/download/v0.35.0/mgccli_0.35.0_linux_amd64.tar.gz"
+        sha256 "fbf35827e3b2520a0450ebc7bcb36140ea96cbd7471960dd9641d6b3d7294be9"
 
         def install
           bin.install "mgc"
@@ -40,8 +40,8 @@ class Mgccli < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MagaluCloud/mgccli/releases/download/v0.34.1/mgccli_0.34.1_linux_arm64.tar.gz"
-        sha256 "e82aab6ea941e569b8a2c01c1e2e4b1c17d3fc3bcfa87a3f40e017a066e528fb"
+        url "https://github.com/MagaluCloud/mgccli/releases/download/v0.35.0/mgccli_0.35.0_linux_arm64.tar.gz"
+        sha256 "3abd4f253780c1201149b1a55391962b4046974accc04317662a3d975f550e3a"
 
         def install
           bin.install "mgc"
