@@ -1,58 +1,33 @@
 ## Homebrew Magalu Cloud CLI
 
-O MGC CLI (Command Line Interface) é uma ferramenta que permite aos usuários interagirem com os serviços da Magalu Cloud (MGC) por meio de linha de comando. Ela está disponível para os sistema macOS, Linux e Windows nas arquiteturas AMD64 e ARM.
+# Homebrew Tap for Magalu Cloud CLI
 
-Pela CLI você pode adminstrar
+This repository is a Homebrew Tap for MGC CLI, allowing easy installation via Homebrew.
 
-- Object Storage (buckets, objetos, ACL, versões, URL assinada)
-- Virtual Machines (instâncias, snapshots)
-- DBaaS (instâncias, replicações)
-- Block Storage (volumes, associações com VMs)
-- VPC (sub-redes, regras de segurança, IP público)
-- Cluster Kubernetes (criar, escalar, monitorar)
+## Installation
 
-A CLI também permite a criação de perfis para melhor separar suas configurações e *tenants*.
-
-## Pré-Requisitos
-
-Para utilizar a CLI você precisa já ter criado uma conta na Magalu Cloud através do [Console Magalu Cloud](https://console.magalu.cloud).
-
-Uma vez tendo criado a sua conta, basta seguir o procedimento de download e instalação para o seus sistema.
-
-
-Para instalar a CLI utilizar a ferramenta brew, você precisa ter certeza de que ela está corretamente instalada no seu sistema. Visite o site oficial: [https://brew.sh/](https://brew.sh/)
-
-Depois abra um terminal e execute o comando tap no nosso repositório oficial:
-
-```
+```bash
+# Add this tap to your Homebrew
 brew tap MagaluCloud/homebrew-mgccli
-```
 
-e por final execute o comando de instalação:
-
-```
+# Install the tool
 brew install mgccli
 ```
 
+## What is MGC CLI?
 
-## Autenticação
+The MGC CLI is a tool that allows users to interact with Magalu Cloud services and resources through the command line.
 
-Para fazer a autenticação na CLI e ter sua credencial armazenada no arquivo de configuração, você precisa rodar o seguinte comando:
+## Source Code
 
-```
-mgc auth login
-```
+The actual source code is hosted at:
 
-Este comando abrirá uma janela do seu navegador padrão diretamente no site do ID Magalu, onde você deverá fazer seu login. Ao terminar o procedimento e fechar o navegador, a CLI exibirá a confirmação e seu token de acesso será salvo no arquivo abaixo.
+https://github.com/MagaluCloud/magalu
 
-```
-$HOME/.config/mgc/<PERFIL>/auth.yaml
-```
+## Issues & feature requests
 
-Onde <PERFIL> é o nome do perfil que você deseja configurar.
+Please report any issues with the tool itself to the main repository. For issues related to the Homebrew formula, feel free to open an issue here.
 
-Se você precisar do token de acesso para usar com a API da Magalu Cloud, você adquirir também rodando o comando abaixo.
+## License
 
-```
-mgc auth access-token
-```
+This Homebrew Tap and its provided tool are licenced as GNU General Public Licence 3.0.
