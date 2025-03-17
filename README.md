@@ -24,7 +24,7 @@ The actual source code is hosted at:
 
 https://github.com/MagaluCloud/magalu
 
-## Issues
+## Issues & feature requests
 
 Please report any issues with the tool itself to the main repository. For issues related to the Homebrew formula, feel free to open an issue here.
 
