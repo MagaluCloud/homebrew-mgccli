@@ -2,7 +2,7 @@
 
 # Homebrew Tap for Magalu Cloud CLI
 
-This repository is a Homebrew Tap for [Your Tool Name], allowing easy installation via Homebrew.
+This repository is a Homebrew Tap for MGC CLI, allowing easy installation via Homebrew.
 
 ## Installation
 
