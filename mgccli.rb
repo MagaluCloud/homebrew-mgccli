@@ -5,21 +5,21 @@
 class Mgccli < Formula
   desc ""
   homepage "https://magalu.cloud"
-  version "0.45.0"
+  version "0.46.0-rc1-permissions"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.45.0/mgccli_0.45.0_darwin_amd64.tar.gz"
-      sha256 "a05fff695339b49226efaa0afc193f9cf31d1abd3d40fb514f4723bf6c925b60"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.46.0-rc1-permissions/mgccli_0.46.0-rc1-permissions_darwin_amd64.tar.gz"
+      sha256 "54dc05687230b79af15b40befdf1053d16c16546d212bac52449f8a9a1c63e09"
 
       def install
         bin.install "mgc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.45.0/mgccli_0.45.0_darwin_arm64.tar.gz"
-      sha256 "529a0c2aa59882d1c56c028182f5cc804b2bf7ce35a578035aa92008849fe70b"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.46.0-rc1-permissions/mgccli_0.46.0-rc1-permissions_darwin_arm64.tar.gz"
+      sha256 "992f415c68f25fd2aca2cb7feb7eabbf0c90ad4e632720e358b5a7ab6a7dd314"
 
       def install
         bin.install "mgc"
@@ -29,15 +29,15 @@ class Mgccli < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.45.0/mgccli_0.45.0_linux_amd64.tar.gz"
-      sha256 "c919e00fd5bccd5739c9c57680b977a1271fa7cd36c8b17404450bdf18e81892"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.46.0-rc1-permissions/mgccli_0.46.0-rc1-permissions_linux_amd64.tar.gz"
+      sha256 "9438fabaf7111479e28fabe73b552cd1e87271ea293acba341deba374210c595"
       def install
         bin.install "mgc"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.45.0/mgccli_0.45.0_linux_arm64.tar.gz"
-      sha256 "f22f604fc7190f42638f67b3c98466a6f22be0059eb46548d2225714b3f4c603"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.46.0-rc1-permissions/mgccli_0.46.0-rc1-permissions_linux_arm64.tar.gz"
+      sha256 "04baafe8fe79e44d7d0957d7dd43e65a534d791d76cfe7b756f6d8cba87a2786"
       def install
         bin.install "mgc"
       end
