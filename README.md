@@ -11,7 +11,7 @@ This repository is a Homebrew Tap for MGC CLI, allowing easy installation via Ho
 brew tap MagaluCloud/homebrew-mgccli
 
 # Install the tool
-brew install mgccli
+brew install magalucloud/mgccli/mgccli
 ```
 
 ## What is MGC CLI?
