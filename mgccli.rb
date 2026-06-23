@@ -11,7 +11,7 @@ class Mgccli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/MagaluCloud/mgccli/releases/download/v0.61.1/mgccli_0.61.1_darwin_amd64.tar.gz"
-      sha256 "1e71a48c31e37d1f096c3c0ff0008e71dea9e0db8e676559edc90bc5231d7f41"
+      sha256 "7ac9c61a8477f9d8dc6337cf9d65293d6ee71233c49fee144c10c4a906634ac9"
 
       define_method(:install) do
         bin.install "mgc"
@@ -19,7 +19,7 @@ class Mgccli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/MagaluCloud/mgccli/releases/download/v0.61.1/mgccli_0.61.1_darwin_arm64.tar.gz"
-      sha256 "570e6ecb36f5e5558002982dc743a71d1f7a110fc1db924d0dbc3216d5569dfa"
+      sha256 "204cc9661f808be175d753021599eded7682d1d9f65b22ba5def9873b59ba32d"
 
       define_method(:install) do
         bin.install "mgc"
@@ -30,14 +30,14 @@ class Mgccli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/MagaluCloud/mgccli/releases/download/v0.61.1/mgccli_0.61.1_linux_amd64.tar.gz"
-      sha256 "983f031159aa5cd4342b2905350f32099312b830691204e72d7228a3c36c9018"
+      sha256 "25f39e69dba9fc281d5cc16a7bee46e38b2f0f471ea6be9767d3799b22f6dbc6"
       define_method(:install) do
         bin.install "mgc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/MagaluCloud/mgccli/releases/download/v0.61.1/mgccli_0.61.1_linux_arm64.tar.gz"
-      sha256 "70c1cd583ac5cb68871138e920309e1121ba17f6b42a443db4a462c84384fa34"
+      sha256 "8ee6633a09523d790d1643ec1421a322cc84159643b6da94afde8d9d47f06f1b"
       define_method(:install) do
         bin.install "mgc"
       end
