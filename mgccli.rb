@@ -5,21 +5,21 @@
 class Mgccli < Formula
   desc ""
   homepage "https://magalu.cloud"
-  version "0.63.0"
+  version "0.63.1"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.63.0/mgccli_0.63.0_darwin_amd64.tar.gz"
-      sha256 "4ff373148a115ebe971abc4a9b76bea0cdec6e9d31ca634dd8ad2d7f49ec0360"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.63.1/mgccli_0.63.1_darwin_amd64.tar.gz"
+      sha256 "e8937af595ccc4c480555ef0251534c19f4d7d9a96a01663ec8aa1cdc8cbd035"
 
       define_method(:install) do
         bin.install "mgc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.63.0/mgccli_0.63.0_darwin_arm64.tar.gz"
-      sha256 "76d7772cea278f701dd6eda968495f2ac73ad6f0cf5eac926a76d8275e3244e0"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.63.1/mgccli_0.63.1_darwin_arm64.tar.gz"
+      sha256 "481e4a376c39c68934c032ad87b77a117ccfa4501f7805f423d8d16b7737c3e2"
 
       define_method(:install) do
         bin.install "mgc"
@@ -29,15 +29,15 @@ class Mgccli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.63.0/mgccli_0.63.0_linux_amd64.tar.gz"
-      sha256 "50b54d7fcfedcabea913c72e939e7a38c3d8008b87edd8ed2aa3c65df0336697"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.63.1/mgccli_0.63.1_linux_amd64.tar.gz"
+      sha256 "09136fa30b825bb79acb58aa256cc69595037db5fd0bce169ca741132978610d"
       define_method(:install) do
         bin.install "mgc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.63.0/mgccli_0.63.0_linux_arm64.tar.gz"
-      sha256 "7ef6077bfbf81e4f67addc9cbd641f15a27ecf9a0c6416aaf0890f57bee01e67"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.63.1/mgccli_0.63.1_linux_arm64.tar.gz"
+      sha256 "1344da57615da6f3ff0d10d5f7488dfedf935f363926daa2ba8d286f3175ed25"
       define_method(:install) do
         bin.install "mgc"
       end
