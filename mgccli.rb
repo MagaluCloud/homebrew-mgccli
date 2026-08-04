@@ -5,21 +5,21 @@
 class Mgccli < Formula
   desc ""
   homepage "https://magalu.cloud"
-  version "0.63.1"
+  version "0.64.0-beta"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.63.1/mgccli_0.63.1_darwin_amd64.tar.gz"
-      sha256 "e8937af595ccc4c480555ef0251534c19f4d7d9a96a01663ec8aa1cdc8cbd035"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.64.0-beta/mgccli_0.64.0-beta_darwin_amd64.tar.gz"
+      sha256 "928007e17266735964cdf9141456ee4f523e428dd8311f1b6931b4c9bc5e294c"
 
       define_method(:install) do
         bin.install "mgc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.63.1/mgccli_0.63.1_darwin_arm64.tar.gz"
-      sha256 "481e4a376c39c68934c032ad87b77a117ccfa4501f7805f423d8d16b7737c3e2"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.64.0-beta/mgccli_0.64.0-beta_darwin_arm64.tar.gz"
+      sha256 "3c0d6b8e30956bcb559f73b3074effe664e253709e58a02889c09e5f9a4177fd"
 
       define_method(:install) do
         bin.install "mgc"
@@ -29,15 +29,15 @@ class Mgccli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.63.1/mgccli_0.63.1_linux_amd64.tar.gz"
-      sha256 "09136fa30b825bb79acb58aa256cc69595037db5fd0bce169ca741132978610d"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.64.0-beta/mgccli_0.64.0-beta_linux_amd64.tar.gz"
+      sha256 "f4ada95d1ff137d02d652775748485a44dababf102e1019b2ea5647595b83d78"
       define_method(:install) do
         bin.install "mgc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.63.1/mgccli_0.63.1_linux_arm64.tar.gz"
-      sha256 "1344da57615da6f3ff0d10d5f7488dfedf935f363926daa2ba8d286f3175ed25"
+      url "https://github.com/MagaluCloud/mgccli/releases/download/v0.64.0-beta/mgccli_0.64.0-beta_linux_arm64.tar.gz"
+      sha256 "5387800b0a0d30783882ff888bfaa03626eb272f4220d238071b7fb778252e72"
       define_method(:install) do
         bin.install "mgc"
       end
